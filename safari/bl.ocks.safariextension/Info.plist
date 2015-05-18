@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>Author</key>
-	<string>Michael Bostock</string>
+	<string>Mike Bostock</string>
 	<key>Builder Version</key>
-	<string>8536.26.17</string>
+	<string>10600.6.3</string>
 	<key>CFBundleDisplayName</key>
 	<string>bl.ocks</string>
 	<key>CFBundleIdentifier</key>
@@ -13,7 +13,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.3.1</string>
+	<string>1.3.3</string>
 	<key>CFBundleVersion</key>
 	<string>2</string>
 	<key>Chrome</key>
@@ -29,7 +29,9 @@
 		</dict>
 	</dict>
 	<key>Description</key>
-	<string>A simple viewer for code examples hosted on GitHub Gist.</string>
+	<string>Quickly jump between any GitHub Gist and the corresponding live view on bl.ocks.org.</string>
+	<key>DeveloperIdentifier</key>
+	<string>242J7F2J39</string>
 	<key>ExtensionInfoDictionaryVersion</key>
 	<string>1.0</string>
 	<key>Permissions</key>
