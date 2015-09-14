@@ -5,7 +5,7 @@ observer.observe(document.documentElement, {childList: true, subtree: true});
 redraw();
 
 function redraw() {
-  var container = document.querySelector(".gist-sidebar");
+  var container = document.querySelector(".repository-sidebar .only-with-full-nav");
   if (!container) return;
 
   var parts = location.pathname.substring(1).split("/"),
@@ -21,8 +21,8 @@ function redraw() {
 
   if (!anchor) {
     anchor = document.createElement("a");
-    anchor.className = "minibutton sidebar-button bl-ocks-button";
-    anchor.innerHTML = '<span class="octicon octicon-link-external"></span>bl.ocks.org';
+    anchor.className = "btn btn-block bl-ocks-button";
+    anchor.innerHTML = '<span class="octicon octicon-link-external"></span> bl.ocks.org';
   }
 
   // Disconnect to avoid observing our own mutations.

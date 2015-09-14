@@ -6,4 +6,4 @@ To install the **Chrome** extension, visit the [Chrome Web Store](https://chrome
 
 To install the **Firefox** extension, visit the [Mozilla Add-ons](https://addons.mozilla.org/en-US/firefox/addon/blocksorg/). Then click *Add to Firefox*.
 
-To install the **Safari** extension, download [bl.ocks.safariextz](https://raw.github.com/mbostock/bl.ocks.org/master/safari/bl.ocks.safariextz) and then double-click. (Addition to the Safari Extensions Gallery is pending approval.)
+A **Safari** extension is no longer supported because Apple requires a $99 per year fee to obtain a developer certificate. Please don’t use Safari.

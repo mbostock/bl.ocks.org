@@ -4,7 +4,7 @@
   <Description about="urn:mozilla:install-manifest">
     <em:id>extension@bl.ocks.org</em:id>
     <em:name>bl.ocks.org</em:name>
-    <em:version>1.3.4</em:version>
+    <em:version>1.3.5</em:version>
     <em:description>View any gist on bl.ocks.org.</em:description>
     <em:creator>Mike Bostock</em:creator>
     <em:homepageURL>http://bl.ocks.org/</em:homepageURL>
