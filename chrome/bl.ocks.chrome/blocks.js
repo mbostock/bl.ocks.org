@@ -5,7 +5,7 @@ observer.observe(document.documentElement, {childList: true, subtree: true});
 redraw();
 
 function redraw() {
-  var container = document.querySelector(".repository-sidebar .only-with-full-nav");
+  var container = document.querySelector(".file-navigation-options");
   if (!container) return;
 
   var parts = location.pathname.substring(1).split("/"),
@@ -20,16 +20,19 @@ function redraw() {
       href = "http://bl.ocks.org/" + user + (id ? "/" + id + (sha ? "/" + sha : "") : "");
 
   if (!anchor) {
-    anchor = document.createElement("a");
-    anchor.className = "btn btn-block bl-ocks-button";
-    anchor.innerHTML = '<span class="octicon octicon-link-external"></span> bl.ocks.org';
+    var div = document.createElement("div");
+    div.className = "file-navigation-option";
+    anchor = div.appendChild(document.createElement("a"));
+    anchor.className = "btn btn-sm bl-ocks-button";
+    anchor.innerHTML = '<span class="octicon octicon-link-external"></span> bl.ocks';
+
+    // Disconnect to avoid observing our own mutations.
+    observer.disconnect();
+    container.appendChild(div);
+    observer.observe(document.documentElement, {childList: true, subtree: true});
   }
 
-  // Disconnect to avoid observing our own mutations.
-  if (anchor.href !== href || anchor.parentNode !== container) {
-    observer.disconnect();
+  if (anchor.href !== href) {
     anchor.href = href;
-    container.appendChild(anchor);
-    observer.observe(document.documentElement, {childList: true, subtree: true});
   }
 }
