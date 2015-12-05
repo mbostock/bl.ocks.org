@@ -29,7 +29,9 @@ window.addEventListener("load", function load() {
         div.className = "file-navigation-option";
         anchor = div.appendChild(document.createElement("a"));
         anchor.className = "btn btn-sm bl-ocks-button";
-        anchor.innerHTML = '<span class="octicon octicon-link-external"></span> bl.ocks';
+        var span = anchor.appendChild(document.createElement("SPAN"));
+        span.className = "octicon octicon-link-external";
+        anchor.appendChild(document.createTextNode(" bl.ocks"));
 
         // Disconnect to avoid observing our own mutations.
         observer.disconnect();

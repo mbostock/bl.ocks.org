@@ -1,3 +1,4 @@
 #/bin/bash
 
-find . -type f -print | zip bl.ocks.firefox.xpi -@
+rm -f bl.ocks.firefox.xpi
+zip bl.ocks.firefox.xpi chrome.manifest content/blocks.js content/blocks.xul install.rdf
