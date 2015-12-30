@@ -1,0 +1,3 @@
+content	bl.ocks.org	content/
+content	bl.ocks.org	content/ contentaccessible=yes
+overlay chrome://browser/content/browser.xul chrome://bl.ocks.org/content/blocks.xul
