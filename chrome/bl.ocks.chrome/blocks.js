@@ -12,7 +12,7 @@ function redraw() {
       user = parts[0],
       id = parts[1],
       sha = parts[2];
-  if (!user || !/^[a-z0-9][a-z0-9]*$/i.test(user)) return;
+  if (!user || user.length > 39 || !/^[a-z0-9](?:-?[a-z0-9])*$/i.test(user)) return;
   if (!/^([0-9]+|[0-9a-f]{20})$/.test(id)) id = null;
   if (!/^[0-9a-f]{40}$/.test(sha)) sha = null;
 
