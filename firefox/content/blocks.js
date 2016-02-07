@@ -29,8 +29,12 @@ window.addEventListener("load", function load() {
         div.className = "file-navigation-option";
         anchor = div.appendChild(document.createElement("a"));
         anchor.className = "btn btn-sm bl-ocks-button";
-        var span = anchor.appendChild(document.createElement("SPAN"));
-        span.className = "octicon octicon-link-external";
+        var svg = anchor.appendChild(document.createElementNS("http://www.w3.org/2000/svg", "svg"));
+        svg.setAttribute("class", "octicon octicon-link-external");
+        svg.setAttribute("height", 16);
+        svg.setAttribute("width", 12);
+        var path = svg.appendChild(document.createElementNS("http://www.w3.org/2000/svg", "path"));
+        path.setAttribute("d", "M11 10h1v3c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V3c0-0.55 0.45-1 1-1h3v1H1v10h10V10zM6 2l2.25 2.25-3.25 3.25 1.5 1.5 3.25-3.25 2.25 2.25V2H6z");
         anchor.appendChild(document.createTextNode(" bl.ocks"));
 
         // Disconnect to avoid observing our own mutations.
