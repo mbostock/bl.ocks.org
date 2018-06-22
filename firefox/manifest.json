@@ -1,0 +1,33 @@
+{
+  "applications": {
+    "gecko": {
+      "id": "extension@bl.ocks.org",
+      "strict_min_version": "42.0"
+    }
+  },
+
+  "name": "bl.ocks.org",
+
+  "version": "2.0.0",
+
+  "description": "View any gist on bl.ocks.org.",
+
+  "author": "Mike Bostock (Web Extension Port by Joe Freedman)",
+
+  "homepage_url": "http://bl.ocks.org/",
+
+  "background": {
+    "scripts": ["blocks.js"],
+    "persistent": false
+  },
+
+  "browser_action": {
+    "default_title": "bl.ocks.org"
+  },
+
+  "manifest_version": 2,
+
+  "permissions": [
+    "tabs"
+  ]
+}
